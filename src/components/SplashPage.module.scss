@@ -1,0 +1,107 @@
+@import "../styles/fonts.scss";
+@import "../styles/colors.scss";
+@import "../styles/shadow.scss";
+
+.SplashPage {
+  .navigation {
+    width: 100%;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    background-color: $michelangelo-white;
+    position: sticky;
+    top: 0;
+    box-shadow: $bottom-box-shadow;
+
+    .container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+
+      .brand {
+        display: flex;
+        align-items: center;
+
+        span {
+          font-family: $michelangelo-font-family;
+          font-weight: $michelangelo-normal-weight;
+          font-size: $michelangelo-large-subtitle-size;
+        }
+      }
+
+      .menu {
+        display: flex;
+        align-items: center;
+        .login_button {
+          color: $michelangelo-black;
+          font-family: $michelangelo-font-family;
+          font-weight: $michelangelo-bold-weight;
+          font-size: $michelangelo-description-size;
+          text-decoration: none;
+          background-color: $michelangelo-dark-green;
+          padding: 10px 30px;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+
+  .lead_content {
+    padding: 2rem 0;
+    background: $michelangelo-medium-green;
+    border-bottom: 1px solid black;
+    min-height: 650px;
+
+    .lead {
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: $michelangelo-normal-weight;
+      font-family: $michelangelo-font-family;
+      font-size: $michelangelo-h1-size;
+    }
+    .subtitle {
+      font-weight: $michelangelo-normal-weight;
+      font-family: $michelangelo-font-family;
+      font-size: $michelangelo-large-subtitle-size;
+    }
+  }
+  .features_content {
+    padding: 20px;
+    min-height: 555px;
+
+    .features_content_header {
+      font-family: $michelangelo-font-family;
+      font-weight: $michelangelo-normal-weight;
+      font-size: $michelangelo-label-size;
+    }
+    .features {
+      display: flex;
+
+      div {
+        width: 100%;
+        margin: 0 9px;
+      }
+
+      h2 {
+        font-family: $michelangelo-font-family;
+        font-weight: $michelangelo-bold-weight;
+        font-size: $michelangelo-description-size;
+      }
+
+      p {
+        font-family: $michelangelo-font-family;
+        font-size: $michelangelo-description-size;
+      }
+    }
+  }
+  .footer {
+    background: $michelangelo-black;
+    padding: 2rem 0;
+    text-align: center;
+    color: white;
+    font-family: $michelangelo-font-family;
+  }
+}
