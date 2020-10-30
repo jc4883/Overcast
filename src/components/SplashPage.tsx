@@ -9,7 +9,7 @@ const SplashPage = () => {
       <nav className={styles.navigation}>
         <div className={styles.container}>
           <div className={styles.brand}>
-            <span>Michelangelo</span>
+            <span>Overcast</span>
           </div>
           <div className={styles.menu}>
             <Link to="/login" className={styles.login_button}>
