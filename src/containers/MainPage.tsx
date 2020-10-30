@@ -1,32 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+
+import Navigation from "components/common/Navigation";
+import PodcastEntry from "components/PodcastEntry";
+
 import styles from "./MainPage.module.scss";
 
 const MainPage = () => {
-  const initialState: any[] = [];
-  const [notifications, setNotifications] = useState(initialState);
-
-  useEffect(() => {
-    fetchNotifications();
-  }, []);
-
-  const fetchNotifications = () => {
-    fetch("http://localhost:8000/api/auth/users/")
-      .then((response) => response.json())
-      .then((data) => setNotifications(data));
-
-    // setNotifications([
-    //   { id: 1, message: "hello there." },
-    //   { id: 2, message: "this is a message." },
-    //   { id: 3, message: "Here is another message." },
-    // ]);
-  };
-
   return (
-    <div className={styles.MainPage}>
-      {notifications.map((notification, key) => {
-        return <div key={key}>{notification.username}</div>;
-      })}
-    </div>
+    <section className={styles.MainPage}>
+      <Navigation />
+      <PodcastEntry
+        title="Hibachi Episode"
+        url="https://overcast-assets.s3.amazonaws.com/65F34B18-6DEE-4C2E-90D6-58D44E1B9749.mp4"
+      />
+    </section>
   );
 };
 

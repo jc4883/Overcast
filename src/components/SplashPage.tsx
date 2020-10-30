@@ -1,72 +1,64 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Navigation from "components/common/Navigation";
+
+import twitter_header_photo from "../overcast_icons/twitter_header_photo_2.png";
+
 import styles from "./SplashPage.module.scss";
 
 const SplashPage = () => {
   return (
     <section className={styles.SplashPage}>
-      <nav className={styles.navigation}>
-        <div className={styles.container}>
-          <div className={styles.brand}>
-            <span>Overcast</span>
-          </div>
-          <div className={styles.menu}>
-            <Link to="/login" className={styles.login_button}>
-              Login
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       <section className={styles.lead_content}>
         <div className={styles.lead}>
-          <h1>
-            A Messaging Service
-            <br /> That Translates Everything
-          </h1>
+          <img
+            src={twitter_header_photo}
+            className={styles.twitter_header_photo}
+          />
+          <h1>A Podcast on Millenial Life</h1>
           <p className={styles.subtitle}>
-            Send a text in one language, receive texts in another. It's free,
-            and for the web.
+            With your hosts{" "}
+            <span className={styles.peter_name}>Peter Choi</span> and{" "}
+            <span className={styles.colin_name}>Colin Cool</span>!
           </p>
         </div>
       </section>
 
       <section className={styles.features_content}>
-        <h1 className={styles.features_content_header}>
-          Break Down the Language Barrier
-        </h1>
+        <div className={styles.features_content_header_container}>
+          <h1 className={styles.features_content_header}>About Us</h1>
+        </div>
         <div className={styles.features}>
           <div>
-            <h2>Find friends</h2>
+            <h2>Peter Choi</h2>
             <p>
-              Add anyone to your friends list by simply searching for their
-              email address, phone number, or name.
+              Hey! I'm a 21 year old student at Columbia University studying
+              Computer Science. I enjoy talking about technology, careers,
+              evolution, and human nature. Most of all, I like talking about
+              everyday life and the ridiculous things we do as a society.
             </p>
           </div>
           <div>
-            <h2>Easy to use</h2>
+            <h2>Colin Cool</h2>
             <p>
-              Set your translation settings to any language by default or
-              translate each message manually.
+              I'm Colin! I'm also 21 and I study systems engineering at the
+              University of Virginia. I like talking about pop culture,
+              politics, music, sports, and human nature. Oh, Peter and I know
+              each other from high school. Hey thanks for checking out our
+              podcast, and I hope you enjoy!
             </p>
-          </div>
-          <div>
-            <h2>Accessible</h2>
-            <p>
-              All you need is the web. Use it anywhere you have internet
-              service.
-            </p>
-          </div>
-          <div>
-            <h2>Sleek</h2>
-            <p>Enjoy an award winning UI and delightful design.</p>
           </div>
         </div>
+        <Link to="/episodes" className={styles.episodes_button}>
+          Check Out Episodes for Free!
+        </Link>
       </section>
       <footer className={styles.footer}>
         <p>
-          <strong>Made with {"<3"} from P+T</strong>
+          <strong>Reach out at peterchoi@gmail.com!</strong>
         </p>
       </footer>
     </section>

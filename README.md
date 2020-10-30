@@ -1,4 +1,9 @@
-Hosted on http://translator-app.s3-website-us-east-1.amazonaws.com/
+Hosted on http://overcast-frontend.s3-website-us-east-1.amazonaws.com/
+
+To upload new podcast:
+
+upload mp4 file (cannot be .mov) to overcast-assets s3 bucket. Go to file details, click make public. Add new PodcastEntry component with s3 url. Deploy.
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

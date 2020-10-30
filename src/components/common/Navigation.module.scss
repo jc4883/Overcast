@@ -1,0 +1,50 @@
+@import "../../styles/fonts.scss";
+@import "../../styles/colors.scss";
+@import "../../styles/shadow.scss";
+
+.navigation {
+  width: 100%;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  background-color: $michelangelo-white;
+  position: sticky;
+  top: 0;
+  box-shadow: $bottom-box-shadow;
+
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+
+    .brand {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      text-decoration: none;
+      color: $michelangelo-black;
+
+      span {
+        font-family: $michelangelo-font-family;
+        font-weight: $michelangelo-normal-weight;
+        font-size: $michelangelo-large-subtitle-size;
+      }
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      .episodes_button {
+        color: $michelangelo-white;
+        font-family: $michelangelo-font-family;
+        font-weight: $michelangelo-bold-weight;
+        font-size: $michelangelo-description-size;
+        text-decoration: none;
+        background-color: $overcast-navy;
+        padding: 10px 30px;
+        border-radius: 20px;
+      }
+    }
+  }
+}

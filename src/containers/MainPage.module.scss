@@ -1,2 +1,6 @@
+@import "../styles/colors.scss";
+
 .MainPage {
+  min-height: 100vh;
+  background-color: $overcast-navy;
 }
