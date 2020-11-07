@@ -1,4 +1,4 @@
-Hosted on http://overcast-frontend.s3-website-us-east-1.amazonaws.com/
+Hosted on http://theovercastpodcast.com
 
 To upload new podcast:
 
